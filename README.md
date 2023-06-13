@@ -23,9 +23,9 @@ WHEN the password is generated\
 THEN the password is either displayed in an alert or written to the page
 
 ## Mock-Up Image
-The following image shows the web application's appearance and functionality:\
+The following image shows the web application's appearance and functionality:<br><br>
 ![03-javascript-homework-demo](https://github.com/nava003/Module_3_Challenge/assets/32070635/88f6fafa-e697-43b0-b44c-ed6715eea54d)
 
 ## Student Result
-Link to Deployed Version: \
-The following images are snapshots of modified HTML, CSS, and JavaScript files respectively:
+Link to Deployed Version: <br><br>
+The following images are snapshots of modified HTML, CSS, and JavaScript files respectively:<br><br>
