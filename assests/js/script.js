@@ -11,18 +11,20 @@ alert("Here are the following options available:\n\n\
 function generatePassword() {
   
   // Declaration of variables
-  var newPassword = "";
-  var passwordContainer = "";
-  var passwordLength = 0;
+  var newPass = "";
+  var pwContainer = "";
+  var containerLength = 0;
+  var pwLength = 0;
 
   // Confirm() first criteria question via IF Statement
   if (confirm("Would you like your password to include Numeric Characters?\n\n\
   Respond with Yes [OK], or No [Cancel]")) {
     
     // Declare a set of Numeric Characters
-    // and Include the set with passwordContainer
+    // and Include the set with pwContainer
     var numericSet = "0123456789";
-    passwordContainer += numericSet;
+    pwContainer += numericSet;
+    containerLength = pwContainer.length;
 
   } else {
     alert("Password will not include Numeric Characters.");
@@ -34,9 +36,10 @@ function generatePassword() {
   Respond with Yes [OK], or No [Cancel]")) {
     
     // Declare a set of Uppercase Letters
-    // and Include the set with passwordContainer
+    // and Include the set with pwContainer
     var alphaUpperSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    passwordContainer += alphaUpperSet;
+    pwContainer += alphaUpperSet;
+    containerLength = pwContainer.length;
 
   } else {
     alert("Password will not include Uppercase Characters.");
@@ -48,9 +51,10 @@ function generatePassword() {
   Respond with Yes [OK], or No [Cancel]")) {
 
     // Declare a set of Lowercase Letters
-    // and Include the set with passwordContainer
+    // and Include the set with pwContainer
     var alphaLowerSet = "abcdefghijklmnopqrstuvwxyz";
-    passwordContainer += alphaLowerSet;
+    pwContainer += alphaLowerSet;
+    containerLength = pwContainer.length;
 
   } else {
     alert("Password will not include Lowercase Characters.");
@@ -62,29 +66,31 @@ function generatePassword() {
   Respond with Yes [OK], or No [Cancel]")) {
 
     // Declare a set of Special Letters
-    // and Include the set with passwordContainer
+    // and Include the set with pwContainer
     var specialSet = " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
-    passwordContainer += specialSet;
+    pwContainer += specialSet;
+    containerLength = pwContainer.length;
 
   } else {
     alert("Password will not include Special Characters.");
   }
 
-  passwordLength = confirmLength();
+  pwLength = confirmLength();
 
-  //console.log("Password Length is: " + passwordLength);
-  //console.log("Password Container: " + passwordContainer);
-  //console.log("New Password: " + newPassword);
-  
+  console.log("Password Length is: " + pwLength);
+  console.log("Password Container: " + pwContainer);
+  console.log("Container Length: " + containerLength);
+  console.log("New Password: " + newPass);
+
   // Creating new password based on criteria
-  for (var i = 0; i < passwordLength; i++) {
+  for (var i = 0; i < pwLength; i++) {
     console.log("Entering for loop beginning with step " + i);
-    newPassword += passwordContainer.charAt(Math.floor(Math.random() * passwordLength));
-    console.log("New Password so far: " + newPassword)
+    newPass += pwContainer.charAt(Math.floor(Math.random() * pwLength));
+    console.log("New Password so far: " + newPass)
   }
 
   console.log("Exited for loop...");
-  return newPassword;
+  return newPass;
 }
 
 // confirmLength() function to ensure correct value is given
