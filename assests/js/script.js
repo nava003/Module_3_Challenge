@@ -70,30 +70,29 @@ function generatePassword() {
     alert("Password will not include Special Characters.");
   }
 
-  console.log("Entering function...");
   passwordLength = confirmLength();
-  console.log("Exiting function...");
 
-
+  console.log("Password Length is: " + passwordLength);
+  console.log("Password Container: " + passwordContainer);
+  console.log("New Password: " + newPassword);
   // Creating new password based on criteria
   for (var i = 0; i < passwordLength; i++) {
+    console.log("Entering for loop beginning with step " + i);
     newPassword += passwordContainer.charAt(Math.floor(Math.random() * passwordLength));
+    console.log("New Password so far: " + newPassword)
   }
 
+  console.log("Exited for loop...");
   return newPassword;
 }
 
 // confirmLength() function to ensure correct value is given
 function confirmLength() {
-  console.log("Inside function...")
   var functPassLength = prompt("Please enter a number between 8 and 128:");
-  console.log("Answer taken. Should proceed to validate...")
   if (functPassLength >= 8 && functPassLength <= 128) {
-    console.log("Length valid. Returning to main function...")
     return functPassLength;
   }
   else {
-    console.log("Length invalid. Should reset to current function...")
     alert("Must be a Number between 8 and 128.\n Try again.");
     confirmLength();
   }
