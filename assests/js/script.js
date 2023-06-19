@@ -9,20 +9,64 @@ alert("Here are the following options available:\n\
 // Creating a function to begin asking for password criteria
 function generatePassword() {
   
-  var numericSet = "0123456789";
-  var alphaUpperSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  var alphaLowerSet = "abcdefghijklmnopqrstuvwxyz";
-  var specialSet = " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
+  // Will hold all characters based on answered criteria
+  var newPassword = "";
 
-  // Confirm() them the first criteria question via IF Statement
+  // Confirm() first criteria question via IF Statement
   if (confirm("Would you like your password to include Numeric Characters?\n\n\
   Respond with Yes [OK], or No [Cancel]")) {
+    
+    // Declare with a set of Numeric Characters
+    // and Include the set with newPassword
+    var numericSet = "0123456789";
+    newPassword += numericSet;
 
-    
+  } else {
+    alert("Password will not include Numeric Characters.");
   }
-  else {
+
+
+  // Confirm() second criteria question via IF Statement
+  if (confirm("Would you like your password to include Uppercase Characters?\n\n\
+  Respond with Yes [OK], or No [Cancel]")) {
     
+    // Declare with a set of Uppercase Letters
+    // and Include the set with newPassword
+    var alphaUpperSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    newPassword += alphaUpperSet;
+
+  } else {
+    alert("Password will not include Uppercase Characters.");
   }
+
+
+  // Confirm() third criteria question via IF Statement
+  if (confirm("")) {
+
+    // Declare with a set of Lowercase Letters
+    // and Include the set with newPassword
+    var alphaLowerSet = "abcdefghijklmnopqrstuvwxyz";
+    newPassword += alphaLowerSet;
+
+  } else {
+    alert("Password will not include Lowercase Characters.");
+  }
+
+
+  // Confirm() final criteria question via IF Statement
+  if (confirm("")) {
+
+    // Declare with a set of Special Letters
+    // and Include the set with newPassword
+    var specialSet = " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
+    newPassword += specialSet;
+
+  } else {
+    alert("Password will not include Special Characters.");
+  }
+
+
+  // Password creation here
 }
 
 // Get references to the #generate element
