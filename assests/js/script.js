@@ -41,7 +41,8 @@ function generatePassword() {
 
 
   // Confirm() third criteria question via IF Statement
-  if (confirm("")) {
+  if (confirm("Would you like your password to include Lowercase Characters?\n\n\
+  Respond with Yes [OK], or No [Cancel]")) {
 
     // Declare with a set of Lowercase Letters
     // and Include the set with newPassword
@@ -54,7 +55,8 @@ function generatePassword() {
 
 
   // Confirm() final criteria question via IF Statement
-  if (confirm("")) {
+  if (confirm("Would you like your password to include Special Characters?\n\n\
+  Respond with Yes [OK], or No [Cancel]")) {
 
     // Declare with a set of Special Letters
     // and Include the set with newPassword
@@ -65,7 +67,7 @@ function generatePassword() {
     alert("Password will not include Special Characters.");
   }
 
-
+  console.log(newPassword);
   // Password creation here
 }
 
