@@ -72,9 +72,10 @@ function generatePassword() {
 
   passwordLength = confirmLength();
 
-  console.log("Password Length is: " + passwordLength);
-  console.log("Password Container: " + passwordContainer);
-  console.log("New Password: " + newPassword);
+  //console.log("Password Length is: " + passwordLength);
+  //console.log("Password Container: " + passwordContainer);
+  //console.log("New Password: " + newPassword);
+  
   // Creating new password based on criteria
   for (var i = 0; i < passwordLength; i++) {
     console.log("Entering for loop beginning with step " + i);
@@ -88,11 +89,16 @@ function generatePassword() {
 
 // confirmLength() function to ensure correct value is given
 function confirmLength() {
-  var functPassLength = prompt("Please enter a number between 8 and 128:");
-  if (functPassLength >= 8 && functPassLength <= 128) {
-    return functPassLength;
+  var newLength = 0;
+  //console.log("newLength entered function with: " + newLength)
+  newLength = prompt("Please enter a number between 8 and 128:");
+  //console.log("newLength is now: " + newLength)
+  if (newLength >= 8 && newLength <= 128) {
+    //console.log("Valid. newLength new assignment: " + newLength)
+    return newLength;
   }
   else {
+    //console.log("Invalid. newLength is: " + newLength)
     alert("Must be a Number between 8 and 128.\n Try again.");
     confirmLength();
   }
