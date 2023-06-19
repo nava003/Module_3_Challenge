@@ -68,6 +68,7 @@ function generatePassword() {
   }
 
   console.log(newPassword);
+  return newPassword;
   // Password creation here
 }
 
