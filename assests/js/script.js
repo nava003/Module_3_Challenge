@@ -23,6 +23,7 @@ function generatePassword() {
     // Declare a set of Numeric Characters
     // and Include the set with pwContainer
     var numericSet = "0123456789";
+    //console.log("Numeric Set Length: " + numericSet.length)
     pwContainer += numericSet;
     containerLength = pwContainer.length;
 
@@ -38,6 +39,7 @@ function generatePassword() {
     // Declare a set of Uppercase Letters
     // and Include the set with pwContainer
     var alphaUpperSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    //console.log("AlphaUpper Set Length: " + alphaUpperSet.length)
     pwContainer += alphaUpperSet;
     containerLength = pwContainer.length;
 
@@ -53,6 +55,7 @@ function generatePassword() {
     // Declare a set of Lowercase Letters
     // and Include the set with pwContainer
     var alphaLowerSet = "abcdefghijklmnopqrstuvwxyz";
+    //console.log("AlphaLower Set Length: " + alphaLowerSet.length)
     pwContainer += alphaLowerSet;
     containerLength = pwContainer.length;
 
@@ -68,6 +71,7 @@ function generatePassword() {
     // Declare a set of Special Letters
     // and Include the set with pwContainer
     var specialSet = " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
+    //console.log("Special Set Length: " + specialSet.length)
     pwContainer += specialSet;
     containerLength = pwContainer.length;
 
@@ -77,19 +81,19 @@ function generatePassword() {
 
   pwLength = confirmLength();
 
-  console.log("Password Length is: " + pwLength);
-  console.log("Password Container: " + pwContainer);
-  console.log("Container Length: " + containerLength);
-  console.log("New Password: " + newPass);
+  //console.log("Password Length is: " + pwLength);
+  //console.log("Password Container: " + pwContainer);
+  //console.log("Container Length: " + containerLength);
+  //console.log("New Password: " + newPass);
 
   // Creating new password based on criteria
   for (var i = 0; i < pwLength; i++) {
-    console.log("Entering for loop beginning with step " + i);
-    newPass += pwContainer.charAt(Math.floor(Math.random() * pwLength));
-    console.log("New Password so far: " + newPass)
+    //console.log("Entering for loop beginning with step " + i);
+    newPass += pwContainer.charAt(Math.floor(Math.random() * containerLength));
+    //console.log("New Password so far: " + newPass)
   }
 
-  console.log("Exited for loop...");
+  //console.log("Exited for loop...");
   return newPass;
 }
 
