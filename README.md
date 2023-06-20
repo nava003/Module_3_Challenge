@@ -39,9 +39,9 @@ The following image shows the web application's appearance and functionality:
 
 ## Student Result
 
-Link to Deployed Version:  
+Link to Deployed Version: https://nava003.github.io/Module_3_JavaScript_Challenge/  
   
-The following images are snapshots of modified HTML, CSS, and JavaScript files respectively:  
+The following images are snapshots of JavaScript interacting with the user accordingly:  
   
 ![JavaScript_C3_IMG1](https://github.com/nava003/Module_3_JavaScript_Challenge/assets/32070635/bb3ccafe-8f83-4340-8136-e7d9a73905fc)
 ![JavaScript_C3_IMG2](https://github.com/nava003/Module_3_JavaScript_Challenge/assets/32070635/4aba8d77-04f2-4f72-b9c0-3e604ed5f23c)
