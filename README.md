@@ -43,4 +43,8 @@ Link to Deployed Version:
   
 The following images are snapshots of modified HTML, CSS, and JavaScript files respectively:  
   
+![JavaScript_C3_IMG1](https://github.com/nava003/Module_3_JavaScript_Challenge/assets/32070635/bb3ccafe-8f83-4340-8136-e7d9a73905fc)
+![JavaScript_C3_IMG2](https://github.com/nava003/Module_3_JavaScript_Challenge/assets/32070635/4aba8d77-04f2-4f72-b9c0-3e604ed5f23c)
+![JavaScript_C3_IMG3](https://github.com/nava003/Module_3_JavaScript_Challenge/assets/32070635/c078e8e3-cd63-4b85-85de-0236bb2e49b7)
+![JavaScript_C3_IMG4](https://github.com/nava003/Module_3_JavaScript_Challenge/assets/32070635/157a1239-23c5-44c0-8a39-6cb451725b6b)
 
