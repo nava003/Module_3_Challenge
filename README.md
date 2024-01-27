@@ -1,4 +1,4 @@
-# Module_3_Challenge
+# Password Generator
 
 ## User Story
 
